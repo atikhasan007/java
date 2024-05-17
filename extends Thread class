@@ -1,0 +1,19 @@
+class A extends Thread{
+    public void run(){
+        System.out.println("hi, md atik hasan arik");
+    }
+}
+
+class B extends Thread{
+    public void run(){
+    System.out.println("hello , world !");
+    }
+}
+public class HelloWorld {
+    public static void main(String[] args) {
+        A a1 = new A();
+        B b1 = new B();
+        a1.start();
+        b1.start();
+    }
+}
